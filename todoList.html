@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<title>Practical JavaScript</title>
-	</head>
+  <head>
+    <title>Practical JavaScript</title>
+  </head>
 
-	<body>
-		<script>
-			let todos = ['Item 1', 'Item 2', 'Item 3'];
+  <body>
+    <script>
+      let todos = ['Item 1', 'Item 2', 'Item 3'];
 
-			console.log(todos);
+      function add(todo) {
+        todos.push(todo);
+        console.log(todos);
+      }
 
-			todos.push('Item 4');
+      add('another item');
 
-			console.log(todos);
+      todos[0] = 'Item 1: Edited';
 
-			todos[0] = 'Item 1: Edited';
+      console.log(todos);
 
-			console.log(todos);
+      todos.splice(0, 1);
 
-			todos.splice(0, 1);
-
-			console.log(todos);
-		</script>
-	</body>
+      console.log(todos);
+    </script>
+  </body>
 </html>
