@@ -14,20 +14,18 @@
         console.log(todos);
       }
 
-      add('another item');
-
       function edit(itemPosition, newItem) {
         todos[itemPosition] = newItem;
         console.log(todos);
       }
-
-      edit(0, 'edited item');
 
       function remove(itemPosition) {
         todos.splice(itemPosition, 1);
         console.log(todos);
       }
 
+      add('another item');
+      edit(0, 'edited item');
       remove(0, 1);
       remove(2, 1);
       add('Most recent todo');
